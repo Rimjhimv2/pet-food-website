@@ -1,0 +1,178 @@
+.rating-stars{
+
+    color: rgb(245,197,75);
+    }
+    .custom-navbar {
+        background-color: #ff5733; /* Vibrant orange background */
+        border-bottom: 2px solid #c70039; /* Add a red border at the bottom */
+    }
+    
+    product-item{
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 2rem;
+    
+    }
+    .product-item {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .product-item:hover {
+        transform: translateY(-10px); /* Slight lift effect */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    }
+
+    /* Image zoom effect */
+    .product-item img {
+        transition: transform 0.3s ease;
+    }
+
+    .product-item:hover img {
+        transform: scale(1.08); /* Slight zoom effect on image */
+    }
+
+    /* Button hover */
+    .product-item .btn {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .product-item .btn:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+  }
+  
+  /* Offer Section Styling */
+  .section.offer {
+      padding: 4rem 1rem; /* Added horizontal padding for smaller screens */
+      background-color: #f4f4f4; /* Slightly darker background for better contrast */
+  }
+  
+  .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  /* Grid List */
+  .grid-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly smaller min width for better responsiveness */
+      gap: 1.5rem; /* Reduced gap for compact layout */
+      padding: 0;
+      margin: 0;
+  }
+  
+  /* Offer Card */
+  .offer-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      height: var(--height, 374px);
+      width: var(--width, 100%); /* Ensures cards scale well */
+      padding: 1.5rem;
+      color: #fff;
+      border-radius: 12px; /* Slightly increased border radius for a softer look */
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow for better depth */
+  }
+  
+  .offer-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Slightly darker overlay */
+      z-index: 1;
+      transition: background 0.3s ease;
+  }
+  
+  .offer-card:hover::before {
+      background: rgba(0, 0, 0, 0.3); /* Lighten overlay on hover */
+  }
+  
+  .offer-card * {
+      position: relative;
+      z-index: 2;
+  }
+  
+  /* Card Subtitle */
+  .card-subtitle {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #ffd700; /* Brighter gold for better visibility */
+      text-transform: uppercase;
+      letter-spacing: 1px;
+  }
+  
+  /* Card Title */
+  .card-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      line-height: 1.3; /* Improved readability */
+  }
+  
+  .card-title .span {
+      color: #ffd700;
+  }
+  
+  /* Button */
+  .btn {
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #ff7043; /* Slightly toned-down coral */
+      text-decoration: none;
+      border-radius: 8px; /* Increased rounding for a modern look */
+      transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+      background-color: #e64a19; /* Darker shade on hover */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+      .offer-card {
+          height: auto;
+          width: 100%;
+      }
+  
+      .card-title {
+          font-size: 1.4rem; /* Adjusted size for smaller screens */
+      }
+  
+      .card-subtitle {
+          font-size: 0.9rem;
+      }
+  
+      .btn {
+          padding: 0.5rem 1rem; /* Slightly smaller buttons for compactness */
+      }
+  }
+  
+  .image-section img {
+      width: 100%;  /* Ensure the image covers the full width */
+      height: auto; /* Maintain aspect ratio */
+  }
+  
